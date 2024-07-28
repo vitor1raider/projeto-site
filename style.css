@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine&display=swap');
+
+:root{
+    --fontRoboto: "Roboto", sans-serif;
+    --fontBenchNine: "BenchNine", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    /*position: relative; /* verificar depois */
+}
+
+img{
+    width: 100%;
+}
+
+.white{
+    color: white;
+}
+
+.white:hover{
+    color: white;
+}
+/* ----- HOME(index.html) ----- */
+/* ----- HEADER ----- */
+header{
+    color: white;
+    font-family: var(--fontRoboto);
+    background-color: #5D5650;
+    padding: 16px;
+}
+
+.header-container{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.header-contatos{
+    display: flex;
+    gap: 14px;
+}
+
+.header-contatos p, img{
+    font-size: 14px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.icons a{
+    color: white;
+}
+
+/* ----- NAV ----- */
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: right;
+    padding: 22px;
+}
+
+nav a{
+    margin-left: 35px;
+    font-family: var(--fontRoboto);
+    font-size: 18px;
+    color: #858585;
+    text-decoration: none;
+}
+
+.loja{
+    padding: 18px 32px;
+    background: #B2B74A;
+    color: white;
+}
+
+.loja:hover{
+    color: white;
+}
+
+a{	
+	text-decoration: none;
+}
+
+a:hover{
+    color: #B2B74A;
+}
+
+#cor{
+    color: #B2B74A;
+}
+
+div h1{
+    color: #413C38;
+    font-size: 75px;
+    font-family: var(--fontBenchNine);
+}
+
+/* ----- Campo ----- */
+
+.bg-campo{
+    position: relative;
+}
+
+.bg-campo::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(/img/fundo-index.png);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.campo {
+    min-height: 40vh;
+    p{
+        font-size: 29px;
+        font-family: var(--fontBenchNine);
+    }
+}
+
+.campo h1, p{
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.campo h1{
+    margin-top: 10%;
+    font-size: 10em;
+    font-weight: 100;
+}
+
+.alinhamento{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.saiba{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 300px;
+    padding: 15px; 
+    background-color: #756C66;
+    border: .1px solid #FFFFFF;
+}
+
+.saiba p{
+    font-family: var(--fontRoboto);
+    font-size: 18px;
+    color: white;
+}
+
+/* ------ Nossa empresa ------ */
+.grid-container { /* EMPRESA - MARCAS */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.info-empresa h1{
+    color: #413C38;
+    font-family: var(--fontBenchNine);
+    font-size: 75px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 8%;
+}
+
+.info-empresa p{
+    color: #858585;
+    font-family: var(--fontRoboto);
+    font-size: 18px;
+    text-align: justify;
+    width: 26%;
+}
+
+.box-img{
+    width: 400px;
+}
+
+.saiba-mais{
+    margin-top: 3%;
+    margin-left: 35%;
+    width: 300px;
+    padding: 15px;
+    background: #B2B74A;
+    text-align: center;
+}
+
+.saiba-mais a{
+    color: white;
+    font-size: 16px;
+    font-family: var(--fontBenchNine);
+}
+
+/* ------ Nossas marcas ------ */
+.info-marcas h1{
+    color: #413C38;
+    font-family: var(--fontBenchNine);
+    font-size: 75px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.info-marcas p{
+    color: #858585;
+    font-family: var(--fontRoboto);
+    font-size: 18px;
+    text-align: justify;
+    width: 22.8%;
+}
+
+/* ----- Marcas(PATROCINIOS) ----- */
+.marcas{
+    margin: 50px 0;
+}
+
+.marcas img{
+    width: 100%;
+}
+
+/* ----- Serviços ----- material de apoio: https://youtu.be/qeF7ZN5TegY?si=ZVzt4KUmxi5dUMBY&t=548*/
+
+.services{
+    background-color: #262B2B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.servicos-content h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trabalhos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+    padding: 0px 44px 34px 44px;
+}
+
+.servico{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* esconde quando ultrapassa */
+}
+
+.servico img{ /* imagens responsíveis */
+    width: 100%;
+}
+
+.servico-info{
+    font-family: var(--fontBenchNine);
+    text-align: center;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.btn-saiba-mais{
+    margin-top: 30px;
+    width: 300px;
+    padding: 15px;
+    background: #B2B74A;
+    font-family: var(--fontBenchNine);
+    text-align: center;
+}
+
+.btn-saiba-mais:hover{
+    cursor: pointer;
+}
+
+/* ----- Nosso Catálogo ----- */
+.bg-infocatalogo{
+    position: relative;
+}
+
+.bg-infocatalogo:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #000000), url("/img/Untitled.png");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 10%;
+    opacity: 0.9;
+}
+
+.nossocatalogo{
+    min-height: 40vh;
+}
+
+.nossocatalogo p{
+    font-family: var(--fontRoboto);
+}
+
+.nossocatalogo h1{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.space-conferir{
+    margin-top: 1%;
+}
+
+/* ----- Contato ----- */
+.bg-contato{
+    background-color: #5D5650;
+    padding: 50px 0px 50px;
+}
+
+.bg-white{
+    background-color: white;
+    width: 60vw;
+    height: 70vh;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 0px 10px 5px;
+}
+
+.contato h1{
+    font-family: var(--fontBenchNine);
+    font-weight: 400;
+}
+
+.contato p{
+    font-family: var(--fontRoboto);
+    color: #413C38;
+    font-size: 18px;
+}
+
+.container-contatos{
+    display: flex;
+    margin-top: 50px;
+    align-content: center;
+    justify-content: space-around;
+    padding: 15px;
+    flex-flow: row wrap;
+}
+
+/*.contato-left form{
+    margin-left: 50px;
+}*/
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    background-color: #B2B74A;
+    border: none;
+    padding: 5px 2px; 
+    outline: none;
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: white;
+    font-family: var(--fontBenchNine);
+    font-size: 18px;
+}
+
+textarea{
+    width: 100%;
+    background-color: #B2B74A;
+    resize: none;
+    border: none;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+textarea::placeholder{
+    color: white;
+    font-family: var(--fontBenchNine);
+    font-size: 16px;
+}
+
+button{ /*input[type=submit]*/
+    border: 1px solid #B2B74A;
+    padding: 25px;
+    background-color: white;
+    color: #B2B74A;
+    font-family: var(--fontBenchNine);
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* ----- Lado direito CONTATOS ----- */
+.contato-right{
+    flex-direction: column;
+    display: flex;
+    /*margin-left: 15%;
+    justify-content: space-evenly;*/
+}
+
+.contato-right h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: var(--fontRoboto);
+    color: #413C38;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contato-right p{
+    color: #413C38;
+    text-align: left;
+    font-family: var(--fontRoboto);
+}
+
+.contato-right svg{
+    fill: #B2B74A;
+    margin-right: 10px;
+}
+
+.info-contato{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+#normal{
+    align-items: normal;
+}
+
+/* ----- Before Footer ----- */
+.bg-footer{
+    background-color: #5D5650;
+}
+
+.before-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.footer-left{
+    max-width: 24%;
+}
+
+.footer-left p{
+    color: white;
+    font-family: var(--fontRoboto);
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5em;
+    max-width: 72%;
+}
+
+.footer-right {
+    margin-left: 0px;
+}
+
+.footer-right p{
+    color: white;
+}
+
+footer p{
+    margin-top: 1px;
+    background-color: #5D5650;
+    padding: 15px;
+    font-family: var(--fontRoboto);
+    font-size: 15px;
+}
+
+
+
+
+/* ----- empresa.html ----- */
+.bg-home{
+    position: relative;
+}
+
+.bg-home::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(/img/banner2.png);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.menu{
+    min-height: 40vh;
+}
+
+.menu li{
+    list-style: none;
+    margin-left: 50px;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--fontBenchNine);
+    font-size: 68px;
+}
+
+.menu li a:hover{
+    color: #B2B74A;
+}
+
+/* ----- Servicos(empresa.html) ----- */
+.services-bg-white{
+    background-color: #ffffff;
+}
+
+.bola{
+    background-color: #5D5650;
+    border-radius: 50%;
+}
+
+.bola img{
+    width: 100%;
+}
+
+.marrom p{
+    color: #413C38;
+}
+
+.sobre-marcas-emp{
+    margin-bottom: 12%;
+}
+
+.sobre-marcas-emp p{
+    font-family: var(--fontBenchNine);
+    font-size: 22px;
+}
+
+/* ----- servicos.html ----- */
+.title-brown h1{
+    color: #413C38;
+    font-weight: 500;
+}
+
+.saibam-servico{
+    margin-top: 15px;
+    padding: 10px; 
+    background-color: #756C66;
+    border: .1px solid #FFFFFF;
+}
+
+.saibam-servico p{
+    font-family: var(--fontBenchNine);
+}
+
+/* ----- catálogo.html ----- */
+.bg-catalogo{
+    position: relative;
+}
+
+.bg-catalogo::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(/img/fundo-login.png);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 21%;
+    opacity: 0.9;
+}
+
+.title-catalogo{
+    min-height: 40vh;
+    padding: 1% 0 7%;
+}
+
+.title-catalogo h1{
+    text-align: center;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.bg-login{
+    background-color: rgba(255, 255, 255, 0.733);
+    width: 40vw;
+    height: 70vh;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 0px 10px 5px;
+}
+
+.title-login{
+    padding: 50px;
+}
+
+.title-login h2{
+    margin-top: 50px;
+    font-family: var(--fontBenchNine);
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #413C38;
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.login{
+    padding: 15px;
+}
+
+.login input{
+    padding: 15px;
+    background-color: white;
+    border: solid 1px #5D5650;
+    margin-top: 20px;
+}
+
+.login input::placeholder{
+    color: #B2B74A;
+    font-size: 20px;
+}
+
+.login button{
+    padding: 15px;
+    background: #413C38;
+    border: solid 1px #5D5650;
+    margin-top: 20px;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+}
+
+/* ----- servicos-transporte.html ----- */
