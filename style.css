@@ -811,6 +811,10 @@ footer p{
         max-width: 120px;
     } */
 
+    .bg-white {
+        height: 100vh;
+    }
+
     .bg-white, .bg-login{
         width: 85%;
     }
