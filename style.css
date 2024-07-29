@@ -15,7 +15,6 @@
 body{
     width: 100%;
     height: 100%;
-    /*position: relative; /* verificar depois */
 }
 
 img{
@@ -71,12 +70,21 @@ nav{
     padding: 22px;
 }
 
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
 nav a{
-    margin-left: 35px;
+    margin-left: 32px;
     font-family: var(--fontRoboto);
     font-size: 18px;
     color: #858585;
     text-decoration: none;
+}
+
+.menu-burguer{
+    display: none;
 }
 
 .loja{
@@ -108,7 +116,6 @@ div h1{
 }
 
 /* ----- Campo ----- */
-
 .bg-campo{
     position: relative;
 }
@@ -117,7 +124,7 @@ div h1{
     content: '';
     display: block;
     position: absolute;
-    background-image: url(/img/fundo-index.png);
+    background-image: url(img/fundo-index.png);
     left: 0;
     top: 0;
     width: 100%;
@@ -187,7 +194,7 @@ div h1{
     margin-left: 8%;
 }
 
-.info-empresa p{
+.text{
     color: #858585;
     font-family: var(--fontRoboto);
     font-size: 18px;
@@ -195,17 +202,26 @@ div h1{
     width: 26%;
 }
 
+/* .info-empresa p{
+    color: #858585;
+    font-family: var(--fontRoboto);
+    font-size: 18px;
+    text-align: justify;
+    width: 26%;
+} */
+
 .box-img{
     width: 400px;
 }
 
 .saiba-mais{
-    margin-top: 3%;
-    margin-left: 35%;
+    /* margin-top: 3%;
+    margin-left: 35%; */
     width: 300px;
     padding: 15px;
     background: #B2B74A;
     text-align: center;
+    margin: 25px 0;
 }
 
 .saiba-mais a{
@@ -223,13 +239,13 @@ div h1{
     text-align: center;
 }
 
-.info-marcas p{
+/* .info-marcas p{
     color: #858585;
     font-family: var(--fontRoboto);
     font-size: 18px;
     text-align: justify;
-    width: 22.8%;
-}
+    width: 26%;
+} */
 
 /* ----- Marcas(PATROCINIOS) ----- */
 .marcas{
@@ -252,6 +268,10 @@ div h1{
     padding: 54px 14px;
 }
 
+.servicos-content{
+    padding: 15px;
+}
+
 .servicos-content h1{
     color: white;
     text-align: center;
@@ -263,7 +283,8 @@ div h1{
     justify-content: center;
     align-items: center;
     gap: 54px;
-    padding: 0px 44px 34px 44px;
+    padding: 0px 0px 34px 0px;
+    flex-wrap: wrap;
 }
 
 .servico{
@@ -306,7 +327,7 @@ div h1{
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #000000), url("/img/Untitled.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #000000), url("img/Untitled.png");
     left: 0;
     top: 0;
     width: 100%;
@@ -367,9 +388,10 @@ div h1{
     display: flex;
     margin-top: 50px;
     align-content: center;
+    align-items: center;
     justify-content: space-around;
     padding: 15px;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
 }
 
 /*.contato-left form{
@@ -383,7 +405,7 @@ div h1{
 }
 
 .input-row .input-group{
-    flex-basis: 45%;
+    flex-basis: 49%;
 }
 
 input{
@@ -396,7 +418,8 @@ input{
 }
 
 input::placeholder{
-    color: white;
+    /* color: white; */
+    color: #ffffff;
     font-family: var(--fontBenchNine);
     font-size: 18px;
 }
@@ -478,7 +501,7 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .footer-left{
@@ -522,7 +545,7 @@ footer p{
     content: '';
     display: block;
     position: absolute;
-    background-image: url(/img/banner2.png);
+    background-image: url(img/banner2.png);
     left: 0;
     top: 0;
     width: 100%;
@@ -607,7 +630,7 @@ footer p{
     content: '';
     display: block;
     position: absolute;
-    background-image: url(/img/fundo-login.png);
+    background-image: url(img/fundo-login.png);
     left: 0;
     top: 0;
     width: 100%;
@@ -684,3 +707,145 @@ footer p{
 }
 
 /* ----- servicos-transporte.html ----- */
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px){
+    .trabalhos {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .servico img {
+        max-width: 120px;
+    }
+}
+
+/* ----- SMARTPHONES(CELULARES) ------ */ /* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+
+    .header-contatos p{
+        font-size: 12px;
+    }
+
+    nav{
+        justify-content: center;
+        padding: 5px;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    .menu-burguer{
+        display: block;
+    }
+
+    .campo h1{
+        font-size: 64px;
+    }
+
+    .campo p{
+        font-size: 24px;
+    }
+
+    .saiba{
+        width: 220px;
+        padding: 10px; 
+        margin: 25%;   
+    }
+
+    .saiba p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .box-img{
+        display: flex;
+        width: 365px;
+        justify-content: center;
+    }
+
+    .info-empresa p, .info-marcas p, .footer-left p{
+        margin: 5% 0;
+        width: 85%;
+        font-size: 16px;
+        line-height: 1.4rem;
+    }
+
+    .servicos-content h1, .nossocatalogo h1, .info-empresa h1, .info-marcas h1{
+        font-size: 50px;
+    }
+
+    .info-empresa h1{
+        margin: 0;
+    }
+
+    .nossocatalogo p{
+        font-size: 15px;
+        max-width: 85%;
+    }
+
+    /* .trabalhos {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .servico img {
+        max-width: 120px;
+    } */
+
+    .bg-white, .bg-login{
+        width: 85%;
+    }
+
+    .btn-saiba-mais{
+        margin-top: 0;
+    }
+
+    .info-contato p{
+        font-size: 12px;
+    }
+ 
+    .contato-right{
+        flex: 1;
+        align-content: center;
+        flex-wrap: wrap;
+    } 
+
+    /* .container-contatos{
+        flex-flow: row wrap;
+    } */
+
+    .contato-right h3{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .before-footer{
+        flex-direction: column;
+    }
+
+    .footer-left{
+        display: flex;
+        max-width: 100%;
+        text-align: justify;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (max-width: 1200px) {
+
+    .container-contatos{
+        flex-flow: row wrap;
+    }
+
+    .bg-white, .bg-login{
+        width: 85%;
+    }
+}
