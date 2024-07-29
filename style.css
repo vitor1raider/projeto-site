@@ -124,7 +124,7 @@ div h1{
     content: '';
     display: block;
     position: absolute;
-    background-image: url(./img/fundo-index.png);
+    background-image: url(img/fundo-index.png);
     left: 0;
     top: 0;
     width: 100%;
