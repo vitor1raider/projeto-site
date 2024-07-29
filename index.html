@@ -41,12 +41,17 @@
         </header>
         <nav>
             <div>
-                <a id="cor" href="#">HOME</a> 
-                <a href="empresa.html">EMPRESA</a>
-                <a href="serviços.html">SERVIÇOS</a>
-                <a href="catálogo.html">CATÁLOGO</a>
-                <a href="contato.html">CONTATO</a>
-                <a class="loja" href="#">LOJA</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list menu-burguer" viewBox="0 0 16 16"onclick="clickMenu()">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+                <ul>
+                    <li><a id="cor" href="#">HOME</a></li>       
+                    <li><a href="empresa.html">EMPRESA</a></li>
+                    <li><a href="serviços.html">SERVIÇOS</a></li>                  
+                    <li><a href="catálogo.html">CATÁLOGO</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li><a class="loja" href="#">LOJA</a></li>
+                </ul>
             </div>
         </nav>
             <div class="bg-campo">
@@ -62,56 +67,60 @@
                 <h1>NOSSA EMPRESA</h1>
                 <div class="sobre-empresa grid-container">
                     <div class="box-img">
-                        <img src="/img/img-cinza.png" alt="Imagem vazia empresa">
+                        <!-- <img src="/img/img-cinza.png" alt="Imagem vazia empresa"> -->
+                        <img src="https://images.pexels.com/photos/2889792/pexels-photo-2889792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem nossa empresa">
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales arcu sed maximus convallis. Nullam euismod imperdiet eros, id laoreet nibh fringilla vel. Duis consequat, ligula et pellentesque bibendum, magna ex ullamcorper est, sed ultricies tortor magna at mi. Quisque sagittis luctus quam, at pharetra nunc varius id. Quisque id pretium ex, id pellentesque erat. Suspendisse vel ante in leo.</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales arcu sed maximus convallis. Nullam euismod imperdiet eros, id laoreet nibh fringilla vel. Duis consequat, ligula et pellentesque bibendum, magna ex ullamcorper est, sed ultricies tortor magna at mi. Quisque sagittis luctus quam, at pharetra nunc varius id. Quisque id pretium ex, id pellentesque erat. Suspendisse vel ante in leo.</p>
                 </div>
-               <div class="saiba-mais"><a href="empresa.html">SAIBA MAIS</div></a>
+                <div class="saiba-mais">
+                    <a href="empresa.html">SAIBA MAIS</a>
+                </div>
             </div>
             <div class="info-marcas center-h1">
                 <h1>NOSSAS MARCAS</h1>
                 <div class="sobre-marcas grid-container">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor, magna nec varius iaculis, tortor neque posuere nisi, id pharetra turpis lacus eu augue. Sed eget arcu eu justo semper sagittis eu in est. Praesent ex elit, molestie ut erat pretium, tincidunt scelerisque felis. Integer lectus magna, varius non neque non, ullamcorper lobortis ex. Donec non aliquet sapien, id facilisis massa. Proin nec nunc tortor. Aliquam non volutpat nibh. Nam sit amet lacus ut est dapibus fermentum. Proin nulla orci, fringilla vitae viverra non, efficitur sed massa. Morbi et aliquam lorem. Proin nec ornare metus. Aliquam erat volutpat.</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor, magna nec varius iaculis, tortor neque posuere nisi, id pharetra turpis lacus eu augue. Sed eget arcu eu justo semper sagittis eu in est. Praesent ex elit, molestie ut erat pretium, tincidunt scelerisque felis. Integer lectus magna, varius non neque non, ullamcorper lobortis ex. Donec non aliquet sapien, id facilisis massa. Proin nec nunc tortor. Aliquam non volutpat nibh. Nam sit amet lacus ut est dapibus fermentum. Proin nulla orci, fringilla vitae viverra non, efficitur sed massa. Morbi et aliquam lorem. Proin nec ornare metus. Aliquam erat volutpat.</p>
                     <div class="box-img">
-                        <img src="/img/img-cinza.png" alt="Imagem vazia marcas">
+                        <!-- <img src="/img/img-cinza.png" alt="Imagem vazia marcas"> -->
+                        <img src="https://images.pexels.com/photos/2252557/pexels-photo-2252557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem nossas marcas">
                     </div>
                 </div>
             </div>
             <div class="marcas">
-                <img src="/img/marcas.png" alt="Marcas">
+                <img src="img/marcas.png" alt="Marcas">
             </div>
             <section class="services">
-                <div class="servicos-content">
+                <div class="servicos-content alinhamento">
                     <h1>NOSSOS SERVIÇOS</h1>
                     <section class="trabalhos">
                         <div class="servico">
-                            <img src="/img/caminhao.png" alt="Caminhão-serviços">
+                            <img src="img/caminhao.png" alt="Caminhão-serviços">
                             <div class="servico-info">
                                 <p>Transporte</p>
                             </div>
                         </div>
                         <div class="servico">
-                            <img src="/img/secagem.png" alt="Secagem-serviços">
+                            <img src="img/secagem.png" alt="Secagem-serviços">
                             <div class="servico-info">
                                 <p>Secagem</p>
                             </div>
                         </div>
                         <div class="servico">
-                            <img src="/img/container.png" alt="Container-serviços">
+                            <img src="img/container.png" alt="Container-serviços">
                             <div class="servico-info">
                                 <p>Armazenamento</p>
                             </div>
                         </div>
                         <div class="servico">
-                            <img src="/img/vendas.png" alt="Vendas-serviços">
+                            <img src="img/vendas.png" alt="Vendas-serviços">
                             <div class="servico-info">
                                 <p>Venda futura</p>
                             </div>
                         </div>
                     </section>
-                </div>
-                <div class="btn-saiba-mais">
-                    <p><a href="serviços.html" class="white">SAIBA MAIS</a></p>
+                    <div class="btn-saiba-mais">
+                        <p><a href="serviços.html" class="white">SAIBA MAIS</a></p>
+                    </div>
                 </div>
             </section>
             <div class="bg-infocatalogo">
@@ -204,5 +213,6 @@
             <footer>
                 <p>Desenvolvido por Vitor Heiderscheidt</p>
             </footer>
+        <script src="scripts.js"></script>
     </body>
 </html>
