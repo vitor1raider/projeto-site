@@ -734,6 +734,18 @@ footer p{
     .servico img {
         max-width: 120px;
     }
+
+    .bg-white{
+        height: 85vh;
+    }
+
+    #esconder-contato{
+        display: none;
+    }
+
+    .saiba p{
+        max-width: 100%;
+    }
 }
 
 /* ----- SMARTPHONES(CELULARES) ------ */ /* Medium devices (landscape tablets, 768px and up) */
@@ -810,18 +822,6 @@ footer p{
     .servico img {
         max-width: 120px;
     } */
-
-
-/* --------------------------------------------- */
-    #esconder-contato{
-        display: none;
-    }
-
-    .bg-white {
-        height: 85vh;
-    } 
-
-/* --------------------------------------------- */
 
     .bg-white, .bg-login{
         width: 85%;
