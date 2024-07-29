@@ -811,9 +811,17 @@ footer p{
         max-width: 120px;
     } */
 
-    .bg-white {
-        height: 100vh;
+
+/* --------------------------------------------- */
+    #esconder-contato{
+        display: none;
     }
+
+    .bg-white {
+        height: 85vh;
+    } 
+
+/* --------------------------------------------- */
 
     .bg-white, .bg-login{
         width: 85%;
