@@ -708,6 +708,22 @@ footer p{
 
 /* ----- servicos-transporte.html ----- */
 
+/* ----- TESTE ----- */
+@media screen and (max-width: 375px){
+    .bg-white {
+        height: 100vh;
+    }
+
+    .footer-left p{
+        max-width: 85%;
+        text-align: justify;
+    }
+
+    #esconder-contato{
+        display: none;
+    }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px){
     .trabalhos {
@@ -757,6 +773,7 @@ footer p{
     .saiba p{
         font-size: 16px;
         text-align: center;
+        max-width: 100%;
     }
 
     .box-img{
