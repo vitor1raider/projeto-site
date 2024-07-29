@@ -43,12 +43,17 @@
         </header>
         <nav>
             <div>
-                <a href="/index.html">HOME</a> 
-                <a id="cor" href="empresa.html">EMPRESA</a>
-                <a href="serviços.html">SERVIÇOS</a>
-                <a href="catálogo.html">CATÁLOGO</a>
-                <a href="contato.html">CONTATO</a>
-                <a class="loja" href="#">LOJA</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list menu-burguer" viewBox="0 0 16 16"onclick="clickMenu()">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a id="cor" href="empresa.html">EMPRESA</a></li>
+                    <li><a href="serviços.html">SERVIÇOS</a></li>
+                    <li><a href="catálogo.html">CATÁLOGO</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li><a class="loja" href="#">LOJA</a></li>
+                </ul>
             </div>
         </nav>
         <div class="bg-home">
@@ -61,9 +66,10 @@
             <h1>NOSSA EMPRESA</h1>
             <div class="sobre-empresa grid-container">
                 <div class="box-img">
-                    <img src="/img/img-cinza.png" alt="Imagem vazia empresa">
+                    <!-- <img src="img/img-cinza.png" alt="Imagem vazia empresa"> -->
+                    <img src="https://images.pexels.com/photos/1719669/pexels-photo-1719669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem nossa empresa">
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales arcu sed maximus convallis. Nullam euismod imperdiet eros, id laoreet nibh fringilla vel. Duis consequat, ligula et pellentesque bibendum, magna ex ullamcorper est, sed ultricies tortor magna at mi. Quisque sagittis luctus quam, at pharetra nunc varius id. Quisque id pretium ex, id pellentesque erat. Suspendisse vel ante in leo.</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales arcu sed maximus convallis. Nullam euismod imperdiet eros, id laoreet nibh fringilla vel. Duis consequat, ligula et pellentesque bibendum, magna ex ullamcorper est, sed ultricies tortor magna at mi. Quisque sagittis luctus quam, at pharetra nunc varius id. Quisque id pretium ex, id pellentesque erat. Suspendisse vel ante in leo.</p>
             </div>
         </div>
         <section class="services services-bg-white">
@@ -71,7 +77,7 @@
                 <section class="trabalhos">
                     <div class="servico">
                         <div class="bola">
-                            <img src="/img/caminhao.png" alt="Caminhão-serviços">
+                            <img src="img/caminhao.png" alt="Caminhão-serviços">
                         </div>
                         <div class="servico-info marrom">
                             <p>Transporte de cereais</p>
@@ -79,7 +85,7 @@
                     </div>
                     <div class="servico">
                         <div class="bola">
-                            <img src="/img/secagem.png" alt="Secagem-serviços">
+                            <img src="img/secagem.png" alt="Secagem-serviços">
                         </div>
                         <div class="servico-info marrom">
                             <p>Secagem</p>
@@ -87,7 +93,7 @@
                     </div>
                     <div class="servico">
                         <div class="bola">
-                            <img src="/img/container.png" alt="Container-serviços">
+                            <img src="img/container.png" alt="Container-serviços">
                         </div>
                         <div class="servico-info marrom">
                             <p>Armazenamento</p>
@@ -95,7 +101,7 @@
                     </div>
                     <div class="servico">
                         <div class="bola">
-                            <img src="/img/vendas.png" alt="Vendas-serviços">
+                            <img src="img/vendas.png" alt="Vendas-serviços">
                         </div>
                         <div class="servico-info marrom">
                             <p>Venda futura</p>
@@ -106,9 +112,10 @@
         </section>
         <div class="info-marcas">
             <div class="sobre-marcas grid-container sobre-marcas-emp">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem metus, elementum sed placerat in, luctus vel est. Vivamus suscipit pretium velit vel pellentesque. In pulvinar ut mauris a fermentum. Cras ultricies enim in imperdiet posuere. Suspendisse eget fringilla nisl. Vestibulum vulputate justo ut dolor ultrices pellentesque. Nullam ac turpis vehicula, auctor arcu eu, gravida libero. Aenean enim mi, aliquam et purus vitae, tincidunt feugiat diam. Vivamus at mauris tincidunt, volutpat tortor bibendum, elementum velit. Sed quis tincidunt lorem, quis faucibus eros. Sed laoreet convallis orci, vel pulvinar ex interdum vel.</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem metus, elementum sed placerat in, luctus vel est. Vivamus suscipit pretium velit vel pellentesque. In pulvinar ut mauris a fermentum. Cras ultricies enim in imperdiet posuere. Suspendisse eget fringilla nisl. Vestibulum vulputate justo ut dolor ultrices pellentesque. Nullam ac turpis vehicula, auctor arcu eu, gravida libero. Aenean enim mi, aliquam et purus vitae, tincidunt feugiat diam. Vivamus at mauris tincidunt, volutpat tortor bibendum, elementum velit. Sed quis tincidunt lorem, quis faucibus eros. Sed laoreet convallis orci, vel pulvinar ex interdum vel.</p>
                 <div class="box-img">
-                    <img src="/img/img-cinza.png" alt="Imagem vazia marcas">
+                    <!-- <img src="img/img-cinza.png" alt="Imagem vazia marcas"> -->
+                    <img src="https://images.pexels.com/photos/4911723/pexels-photo-4911723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem nossas marcas">
                 </div>
             </div>
         </div>
