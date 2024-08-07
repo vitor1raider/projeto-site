@@ -42,22 +42,22 @@
             </div>
         </header>
         <nav>
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list menu-burguer" viewBox="0 0 16 16"onclick="clickMenu()">
+            <button id="menu-burguer" class="menu-burguer" aria-label="Menu principal" aria-controls="menu" aria-expanded="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a id="cor" href="empresa.html">EMPRESA</a></li>
-                    <li><a href="serviços.html">SERVIÇOS</a></li>
-                    <li><a href="catálogo.html">CATÁLOGO</a></li>
-                    <li><a href="contato.html">CONTATO</a></li>
-                    <li><a class="loja" href="#">LOJA</a></li>
-                </ul>
-            </div>
+            </button>
+            <ul id="menu" class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="ativo" href="empresa.html">Empresa</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="catálogo.html">Catálogo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a class="loja" href="#">LOJA</a></li>
+            </ul>
         </nav>
         <div class="bg-home">
-            <div class="menu">
+            <div class="home-menu">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="empresa.html">>> EMPRESA</a></li>
             </div>
@@ -72,7 +72,7 @@
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales arcu sed maximus convallis. Nullam euismod imperdiet eros, id laoreet nibh fringilla vel. Duis consequat, ligula et pellentesque bibendum, magna ex ullamcorper est, sed ultricies tortor magna at mi. Quisque sagittis luctus quam, at pharetra nunc varius id. Quisque id pretium ex, id pellentesque erat. Suspendisse vel ante in leo.</p>
             </div>
         </div>
-        <section class="services services-bg-white">
+        <section class="services services-bg-white alinhamento">
             <div class="servicos-content">
                 <section class="trabalhos">
                     <div class="servico">
