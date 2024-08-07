@@ -42,22 +42,22 @@
             </div>
         </header>
         <nav>
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list menu-burguer" viewBox="0 0 16 16"onclick="clickMenu()">
+            <button id="menu-burguer" class="menu-burguer" aria-label="Menu principal" aria-controls="menu" aria-expanded="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="empresa.html">EMPRESA</a></li>
-                    <li><a href="serviços.html">SERVIÇOS</a></li>
-                    <li><a id="cor" href="catálogo.html">CATÁLOGO</a></li>
-                    <li><a href="contato.html">CONTATO</a></li>
-                    <li><a class="loja" href="#">LOJA</a></li>
-                </ul>
-            </div>
+            </button>
+            <ul id="menu" class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a class="ativo" href="catálogo.html">Catálogo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a class="loja" href="#">LOJA</a></li>
+            </ul>
         </nav>
         <div class="bg-home">
-            <div class="menu">
+            <div class="home-menu">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="catálogo.html">>> CATÁLOGO</a></li>
             </div>
