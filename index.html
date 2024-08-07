@@ -40,127 +40,152 @@
             </div>
         </header>
         <nav>
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list menu-burguer" viewBox="0 0 16 16"onclick="clickMenu()">
+            <button id="menu-burguer" class="menu-burguer" aria-label="Menu principal" aria-controls="menu" aria-expanded="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
-                <ul>
-                    <li><a id="cor" href="#">HOME</a></li>       
-                    <li><a href="empresa.html">EMPRESA</a></li>
-                    <li><a href="serviços.html">SERVIÇOS</a></li>                  
-                    <li><a href="catálogo.html">CATÁLOGO</a></li>
-                    <li><a href="contato.html">CONTATO</a></li>
-                    <li><a class="loja" href="#">LOJA</a></li>
-                </ul>
-            </div>
+            </button>
+            <ul id="menu" class="menu">
+                <li><a class="ativo" href="#">Home</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="catálogo.html">Catálogo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a class="loja" href="#">LOJA</a></li>
+            </ul>
         </nav>
-            <div class="bg-campo">
-                <div class="campo">
-                    <div class="alinhamento">
-                        <h1>CAMPO</h1>
-                        <p>COMPRA E VENDA</p>
-                        <div class="saiba"><p>SAIBA MAIS</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="info-empresa alinhamento">
-                <h1>NOSSA EMPRESA</h1>
-                <div class="sobre-empresa grid-container">
-                    <div class="box-img">
-                        <!-- <img src="/img/img-cinza.png" alt="Imagem vazia empresa"> -->
-                        <img src="https://images.pexels.com/photos/2889792/pexels-photo-2889792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem nossa empresa">
-                    </div>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales arcu sed maximus convallis. Nullam euismod imperdiet eros, id laoreet nibh fringilla vel. Duis consequat, ligula et pellentesque bibendum, magna ex ullamcorper est, sed ultricies tortor magna at mi. Quisque sagittis luctus quam, at pharetra nunc varius id. Quisque id pretium ex, id pellentesque erat. Suspendisse vel ante in leo.</p>
-                </div>
-                <div class="saiba-mais">
-                    <a href="empresa.html">SAIBA MAIS</a>
-                </div>
-            </div>
-            <div class="info-marcas center-h1">
-                <h1>NOSSAS MARCAS</h1>
-                <div class="sobre-marcas grid-container">
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor, magna nec varius iaculis, tortor neque posuere nisi, id pharetra turpis lacus eu augue. Sed eget arcu eu justo semper sagittis eu in est. Praesent ex elit, molestie ut erat pretium, tincidunt scelerisque felis. Integer lectus magna, varius non neque non, ullamcorper lobortis ex. Donec non aliquet sapien, id facilisis massa. Proin nec nunc tortor. Aliquam non volutpat nibh. Nam sit amet lacus ut est dapibus fermentum. Proin nulla orci, fringilla vitae viverra non, efficitur sed massa. Morbi et aliquam lorem. Proin nec ornare metus. Aliquam erat volutpat.</p>
-                    <div class="box-img">
-                        <!-- <img src="/img/img-cinza.png" alt="Imagem vazia marcas"> -->
-                        <img src="https://images.pexels.com/photos/2252557/pexels-photo-2252557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem nossas marcas">
-                    </div>
-                </div>
-            </div>
-            <div class="marcas">
-                <img src="img/marcas.png" alt="Marcas">
-            </div>
-            <section class="services">
-                <div class="servicos-content alinhamento">
-                    <h1>NOSSOS SERVIÇOS</h1>
-                    <section class="trabalhos">
-                        <div class="servico">
-                            <img src="img/caminhao.png" alt="Caminhão-serviços">
-                            <div class="servico-info">
-                                <p>Transporte</p>
-                            </div>
+        <main>
+                <div class="bg-campo">
+                    <div class="campo">
+                        <div class="alinhamento">
+                            <h1>CAMPO</h1>
+                            <p>COMPRA E VENDA</p>
+                            <div class="saiba"><p>SAIBA MAIS</p></div>
                         </div>
-                        <div class="servico">
-                            <img src="img/secagem.png" alt="Secagem-serviços">
-                            <div class="servico-info">
-                                <p>Secagem</p>
-                            </div>
-                        </div>
-                        <div class="servico">
-                            <img src="img/container.png" alt="Container-serviços">
-                            <div class="servico-info">
-                                <p>Armazenamento</p>
-                            </div>
-                        </div>
-                        <div class="servico">
-                            <img src="img/vendas.png" alt="Vendas-serviços">
-                            <div class="servico-info">
-                                <p>Venda futura</p>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="btn-saiba-mais">
-                        <p><a href="serviços.html" class="white">SAIBA MAIS</a></p>
                     </div>
                 </div>
-            </section>
-            <div class="bg-infocatalogo">
-                <div class="nossocatalogo alinhamento">
-                    <h1>NOSSO CATÁLOGO</h1>
-                    <p>Confira o nosso catálogo de produtos e tire suas dúvidas sobre os detalhes técnicos.</p>
-                    <div class="saiba space-conferir"><p><a href="catálogo.html" class="white">CONFERIR</a></p></div>
-                </div>
-            </div>
-            <section class="bg-contato">
-                <div class="bg-white">
-                    <div class="contato alinhamento">
-                        <h1>CONTATO</h1>
-                        <p>Fale conosco</p>
+                <div class="info-empresa alinhamento">
+                    <h1>NOSSA EMPRESA</h1>
+                    <div class="sobre-empresa grid-container">
+                        <div class="box-img">
+                            <!-- <img src="/img/img-cinza.png" alt="Imagem vazia empresa"> -->
+                            <img src="https://images.pexels.com/photos/2889792/pexels-photo-2889792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem nossa empresa">
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales arcu sed maximus convallis. Nullam euismod imperdiet eros, id laoreet nibh fringilla vel. Duis consequat, ligula et pellentesque bibendum, magna ex ullamcorper est, sed ultricies tortor magna at mi. Quisque sagittis luctus quam, at pharetra nunc varius id. Quisque id pretium ex, id pellentesque erat. Suspendisse vel ante in leo.</p>
                     </div>
-                    <div class="container-contatos">
-                        <div class="contato-left">
-                            <form action="GET">
-                                <div class="input-row">
-                                    <div class="input-group">      
-                                        <input type="text" placeholder="Nome">
-                                    </div>
-                                    <div class="input-group">         
-                                        <input type="text" placeholder="Email">
-                                    </div>
+                    <a href="empresa.html" class="saiba-mais white">SAIBA MAIS</a>
+                </div>
+                <div class="info-marcas center-h1">
+                    <h1>NOSSAS MARCAS</h1>
+                    <div class="sobre-marcas grid-container">
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor, magna nec varius iaculis, tortor neque posuere nisi, id pharetra turpis lacus eu augue. Sed eget arcu eu justo semper sagittis eu in est. Praesent ex elit, molestie ut erat pretium, tincidunt scelerisque felis. Integer lectus magna, varius non neque non, ullamcorper lobortis ex. Donec non aliquet sapien, id facilisis massa. Proin nec nunc tortor. Aliquam non volutpat nibh. Nam sit amet lacus ut est dapibus fermentum. Proin nulla orci, fringilla vitae viverra non, efficitur sed massa. Morbi et aliquam lorem. Proin nec ornare metus. Aliquam erat volutpat.</p>
+                        <div class="box-img">
+                            <!-- <img src="/img/img-cinza.png" alt="Imagem vazia marcas"> -->
+                            <img src="https://images.pexels.com/photos/2252557/pexels-photo-2252557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem nossas marcas">
+                        </div>
+                    </div>
+                </div>
+                <div class="marcas">
+                    <img src="img/marcas.png" alt="Marcas">
+                </div>
+                <section class="services alinhamento">
+                    <div class="servicos-content alinhamento">
+                        <h1>NOSSOS SERVIÇOS</h1>
+                        <section class="trabalhos">
+                            <div class="servico">
+                                <img src="img/caminhao.png" alt="Caminhão-serviços">
+                                <div class="servico-info">
+                                    <p>Transporte</p>
                                 </div>
-                                <div class="input-row">
-                                    <div class="input-group">   
-                                        <input type="number" placeholder="Telefone">
-                                    </div>
-                                    <div class="input-group">
-                                        <input type="text" placeholder="Assunto">
-                                    </div>
+                            </div>
+                            <div class="servico">
+                                <img src="img/secagem.png" alt="Secagem-serviços">
+                                <div class="servico-info">
+                                    <p>Secagem</p>
                                 </div>
-                                <textarea name="mensagem" id="mensagem" placeholder="MENSAGEM"></textarea>
-                                <button type="submit">ENVIAR MENSAGEM</button>
-                            </form>
+                            </div>
+                            <div class="servico">
+                                <img src="img/container.png" alt="Container-serviços">
+                                <div class="servico-info">
+                                    <p>Armazenamento</p>
+                                </div>
+                            </div>
+                            <div class="servico">
+                                <img src="img/vendas.png" alt="Vendas-serviços">
+                                <div class="servico-info">
+                                    <p>Venda futura</p>
+                                </div>
+                            </div>
+                        </section>
+                        <a href="serviços.html" class="btn-saiba-mais white">SAIBA MAIS</a>
+                    </div>
+                </section>
+                <div class="bg-infocatalogo">
+                    <div class="nossocatalogo alinhamento">
+                        <h1>NOSSO CATÁLOGO</h1>
+                        <p>Confira o nosso catálogo de produtos e tire suas dúvidas sobre os detalhes técnicos.</p>
+                        <a href="catálogo.html" class="saiba white">CONFERIR</a>
+                    </div>
+                </div>
+                <section class="bg-contato">
+                    <div class="bg-white">
+                        <div class="contato alinhamento">
+                            <h1>CONTATO</h1>
+                            <p>Fale conosco</p>
                         </div>
-                        <div class="contato-right">
-                            <h3>Informações de Contato</h3>
+                        <div class="container-contatos">
+                            <div class="contato-left">
+                                <form action="GET">
+                                    <div class="input-row">
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Nome">
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="input-row">
+                                        <div class="input-group">
+                                            <input type="number" placeholder="Telefone">
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Assunto">
+                                        </div>
+                                    </div>
+                                    <textarea name="mensagem" id="mensagem" placeholder="MENSAGEM"></textarea>
+                                    <button class="btnMsg" type="submit">ENVIAR MENSAGEM</button>
+                                </form>
+                            </div>
+                            <div class="contato-right">
+                                <h3>Informações de Contato</h3>
+                                <div class="info-contato" id="normal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                    </svg>
+                                    <p>Rua Vendelino Maffezzolli, 333 -<br> Brusque<br> Santa Catarina<br> CEP: 88888-000</p>
+                                </div>
+                                <div class="info-contato">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                    </svg>
+                                    <p>Telefone: (47) 3211 - 7000</p>
+                                </div>
+                                <div class="info-contato">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                                    </svg>
+                                    <p>vitor.heiderscheidt@unifebe.edu.br</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-footer">
+                    <div class="before-footer">
+                        <div class="footer-left">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non metus viverra eros mattis convallis et eu ante. Nullam et tortor hendrerit, molestie dolor eu.</p>
+                        </div>
+                        <div class="footer-right contato-right" id="esconder-contato">
                             <div class="info-contato" id="normal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
@@ -181,35 +206,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="bg-footer">
-                <div class="before-footer">
-                    <div class="footer-left">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non metus viverra eros mattis convallis et eu ante. Nullam et tortor hendrerit, molestie dolor eu.</p>
-                    </div>
-                    <div class="footer-right contato-right" id="esconder-contato">
-                        <div class="info-contato" id="normal">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
-                            </svg>
-                            <p>Rua Vendelino Maffezzolli, 333 -<br> Brusque<br> Santa Catarina<br> CEP: 88888-000</p>
-                        </div>
-                        <div class="info-contato">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                            </svg>
-                            <p>Telefone: (47) 3211 - 7000</p>
-                        </div>
-                        <div class="info-contato">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-                            </svg>
-                            <p>vitor.heiderscheidt@unifebe.edu.br</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </main>
             <footer>
                 <p>Desenvolvido por Vitor Heiderscheidt</p>
             </footer>
